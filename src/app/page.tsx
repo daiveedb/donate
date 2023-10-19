@@ -10,7 +10,7 @@ import TwitterIcon from "./components/icons/TwitterIcon";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-screen overflow-x-hidden pt-[70px]">
       <section className="flex flex-row-reverse justify-between">
         <div className="relative flex-1">
           <div className="absolute top-0 -right-[200px] z-20">

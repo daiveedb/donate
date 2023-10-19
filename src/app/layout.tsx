@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/utility/Navigation";
+// import { usePathname } from 'next/navigation';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,11 +12,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // const pathname = usePathname()
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navigation />
-        <div className="pt-[70px]">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   );
