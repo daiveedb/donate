@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 import BackgroundSVG from "./components/home-components/BackgroundSvg";
 import WorldMapSvg from "./components/home-components/WorldMapSvg";
 import PlantIcon from "./components/icons/PlantIcon";
@@ -7,25 +7,27 @@ import JagaIcon from "./components/icons/JagaIcon";
 import PhoneIcon from "./components/icons/PhoneIcon";
 import FacebookIcon from "./components/icons/FacebookIcon";
 import TwitterIcon from "./components/icons/TwitterIcon";
+import { AiOutlineMail } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="w-screen overflow-x-hidden pt-[70px]">
-      <section className="flex flex-row-reverse justify-between">
+      <section className="flex flex-col lg:flex-row-reverse justify-between">
         <div className="relative flex-1">
           <div className="absolute top-0 -right-[200px] z-20">
             <BackgroundSVG height={400} />
           </div>
-          <div className="absolute top-0 -right-[200px]">
+          <div className="absolute hidden lg:block top-0 -right-[200px]">
             <WorldMapSvg height={400} />
           </div>
         </div>
         <div className="flex flex-col flex-1 z-20 justify-center items-center h-[400px] px-6">
-          <h1 className="text-6xl">
+          <h1 className="text-5xl">
             <span className="text-palRed font-extrabold">Donate</span> to
             Palestine
           </h1>
-          <h2 className="text-6xl">
+          <h2 className="text-5xl">
             Fight for{" "}
             <span className="text-palGreen font-extrabold">Peace.</span>
           </h2>
@@ -35,18 +37,23 @@ export default function Home() {
             charity.
           </p>
           <div className="w-[70%] flex gap-x-6">
-            <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all ">
-              Donate Now
-            </button>
-            <button className="bg-transparent p-3 rounded text-black w-[200px] hover:bg-palRed hover:text-white transition-all">
-              Learn More
-            </button>
+            <Link href={"/donate"}>
+              <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all ">
+                Donate Now
+              </button>
+            </Link>
+
+            <Link href={"/about"}>
+              <button className="bg-transparent p-3 rounded text-black w-[200px] hover:bg-palRed hover:text-white transition-all">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="px-[200px] mt-[100px]">
-        <div className="grid grid-cols-3 gap-x-4 items-start">
+      <section className="px-[10px] sm:px-[30px] md:px-[50px] lg:px-[150px] xl:px-[200px] mt-[100px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 items-start">
           <div className="flex flex-col justify-center items-center">
             <div>
               <div className="flex justify-center">
@@ -91,10 +98,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-[200px] mt-[100px]">
-        <div className="grid grid-cols-2 gap-x-10 h-[400px]">
+      <section className="px-[10px] sm:px-[30px] md:px-[50px] lg:px-[150px] xl:px-[200px] mt-[100px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 md:h-[400px]">
           <div className="h-full">
-            <div className="relative h-full ">
+            <div className="relative h-[400px] md:h-full">
               <Image alt="gallery" src={"/images/gallery.png"} fill />
             </div>
           </div>
@@ -130,39 +137,40 @@ export default function Home() {
             {/* <p className="text-sm ">
               
             </p> */}
-            <button className="bg-palRed p-3 mt-5 rounded cursor-pointer text-white w-[200px] hover:bg-red-700 transition-all ">
-              Donate Now
-            </button>
+            <Link href={"/donate"}>
+              <button className="bg-palRed p-3 mt-5 rounded cursor-pointer text-white w-[200px] hover:bg-red-700 transition-all ">
+                Donate Now
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="p-10 mt-[100px]">
         <div>
-          <h2 className="text-7xl font-semibold text-center py-3">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-semibold text-center py-3">
             Thousands Need Your Help!
           </h2>
         </div>
-        <div className="flex justify-between items-start w-[70%] mx-auto">
+        <div className="flex justify-between items-center w-[90%] lg:w-[70%] mx-auto">
           <div>
-            <h4 className="text-xl font-semibold">
-              Call us if you have any questions
-            </h4>
+            <h4 className="md:text-xl font-sans font-light">Email Us @</h4>
             <div className="flex items-center gap-x-2">
-              <PhoneIcon width={20} />
+              <p className="text-xl text-palRed">
+                <AiOutlineMail />
+              </p>
               <p className="text-lg font-semibold">1-855-552-2605 </p>
             </div>
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold">Our Socials</h4>
-            <div className="flex items-center gap-x-2">
-              <FacebookIcon width={20} />
-              <TwitterIcon width={20} />
-              <FacebookIcon width={20} />
-              <TwitterIcon width={20} />
-            </div>
+            <h4 className="md:text-xl font-semibold">Or</h4>
           </div>
+          <Link href={"/contact"}>
+            <button className="bg-palRed p-3 rounded cursor-pointer text-white w-[200px] hover:bg-red-700 transition-all ">
+              Contact us
+            </button>
+          </Link>
         </div>
       </section>
     </main>

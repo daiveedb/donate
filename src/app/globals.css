@@ -16,3 +16,7 @@ body h1, h2,h3,h4, .navlink{
 .vision-text{
   @apply font-light tracking-tight
 }
+
+input, textarea{
+  @apply w-full lg:w-[80%] rounded-lg p-3 outline-none bg-gray-100
+}

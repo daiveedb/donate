@@ -1,59 +1,80 @@
-"use client";
-import Image from "next/image";
 import React from "react";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { useRouter } from "next/navigation";
+import JagaIcon from "../components/icons/JagaIcon";
+import Image from "next/image";
 
-const Page = () => {
-  const router = useRouter();
+const page = () => {
   return (
-    <div className="w-screen min-h-screen max-h-max bg-black">
-      <div className="bg-[url('/images/protest3.jpg')] bg-center bg-cover bg-no-repeat w-full h-[50vh] relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black">
-          <button
-            className="text-white text-8xl absolute top-5 left-5"
-            onClick={() => router.back()}
-          >
-            <AiOutlineArrowLeft />
-          </button>
-        </div>
-      </div>
-      <div className="w-full">
-        <h1 className="font-black uppercase text-8xl text-white text-center -translate-y-28">
-          about us
-        </h1>
-        <div className="pb-20 ">
-          <div className="grid grid-cols-2 justify-between w-full px-10">
-            <div className="p-5 w-[75%] mx-auto rounded-xl">
-              <p className="text-white font-thin">
-                Dealing with the challenges of today requires problem-solvers
-                who bring different perspectives and are willing to take risks.
-                WE emerged out of a pursuit to inspire and support the
-                Palestinian people during their struggle to freedom and SO CAN
-                YOU. We’re an organization driven by progressive ideas, bold
-                actions, and a strong foundation of support. Contact us to learn
-                more and get involved.
-              </p>
-            </div>
-            <div>
-              <Image alt="" src={""} />
+    <div className="pt-[70px] px-3 sm:px-5 md:px-10 lg:px-16 xl:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 p-2 sm:p-4 md:p-8 lg:p-12 xl:p-20 w-full">
+        <div className="mb-5">
+          <div className="relative">
+            <h3 className="text-3xl text-center md:text-left">
+              Our Mission By 2024
+            </h3>
+            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 -z-10">
+              <JagaIcon height={20} />
             </div>
           </div>
-          <div className="grid grid-cols-2 justify-between w-full px-10">
-            <div>
-              <Image alt="" src={""} />
-            </div>
-            <div className="p-5 w-[75%] mx-auto rounded-xl">
-              <p className="text-white font-thin">
-                Dealing with the challenges of today requires problem-solvers
-                who bring different perspectives and are willing to take risks.
-                WE emerged out of a pursuit to inspire and support the
-                Palestinian people during their struggle to freedom and SO CAN
-                YOU. We’re an organization driven by progressive ideas, bold
-                actions, and a strong foundation of support. Contact us to learn
-                more and get involved.
-              </p>
-            </div>
+          <p className="py-4 text-center md:text-left">
+            Our main goal is to save and plant as many trees as we can and also
+            provide each customer with the opportunity to turn their unwanted
+            textbooks into profit. Donating books allows a chance for a second
+            life, giving someone else the opportunity to read and enjoy the
+            book. It’s also an environmentally-conscious decision since
+            recycling prevents them from ending up in a landfill. Our main goal
+            is to save and plant as many trees as we can and also provide each
+            customer with the opportunity to turn their unwanted textbooks into
+            profit.
+          </p>
+          <div className="flex justify-center w-full md:justify-start">
+            <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div className="w-full sm:px-6">
+          <div className="w-full h-[300px] relative">
+            <Image
+              alt="protest"
+              className="rounded-lg"
+              src={"/images/protest3.jpg"}
+              fill
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="grid sm:grid-cols-3 justify-items-center text-center pb-5">
+          <div className="flex flex-col">
+            <h3 className="text-3xl font-bold text-palRed">$78,000</h3>
+            <h3>Raised</h3>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="text-3xl font-bold text-palRed">4,000+</h3>
+            <h3>Rescued</h3>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="text-3xl font-bold text-palRed">200,000+</h3>
+            <h3>Fed</h3>
+          </div>
+          {/* <div className="flex flex-col">
+            <h3></h3>
+            <h3>Raised</h3>
+        </div> */}
+        </div>
+        <h2 className="text-xl md:text-4xl text-center">Our Partners</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-4 pt-2 md:pt-8 gap-8 justify-items-center pb-5">
+          <div className="relative w-[60%] h-[50px] mx-auto">
+            <Image alt="partner" src={"/images/partner1.png"} fill />
+          </div>
+          <div className="relative w-[60%] h-[50px] mx-auto">
+            <Image alt="partner" src={"/images/partner2.png"} fill />
+          </div>
+          <div className="relative w-[60%] h-[50px] mx-auto">
+            <Image alt="partner" src={"/images/partner3.png"} fill />
+          </div>
+          <div className="relative w-[60%] h-[50px] mx-auto">
+            <Image alt="partner" src={"/images/partner4.png"} fill />
           </div>
         </div>
       </div>
@@ -61,4 +82,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
