@@ -19,14 +19,8 @@ const page = () => {
             millions of Palestinians
           </a>
           , and the situation remains dire for those who are still living in the
-          Palestinian territories of the{" "}
-          <a
-            className="text-palRed underline"
-            href="https://www.pcrf.net/president-s-blog/what-are-the-gaza-strip-and-the-west-bank.html"
-          >
-            Gaza Strip and the West Bank.
-          </a>
-          If you&apos;re wondering how to help Palestine, there are several
+          Palestinian territories of the Gaza Strip and the West Bank. If
+          you&apos;re wondering how to help Palestine, there are several
           impactful actions you can take:
         </p>
         <ul className="list-disc py-4 px-4">

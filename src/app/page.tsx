@@ -43,7 +43,9 @@ export default function Home() {
               </button>
             </Link>
 
-            <Link href={"/about"}>
+            <Link
+              href={"https://www.bbc.com/news/live/world-middle-east-67246761"}
+            >
               <button className="bg-transparent p-3 rounded text-black w-[150px] sm:w-[200px] hover:bg-palRed hover:text-white transition-all">
                 Learn More
               </button>
