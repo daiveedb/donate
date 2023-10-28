@@ -22,7 +22,7 @@ export default function Home() {
             <WorldMapSvg height={400} />
           </div>
         </div>
-        <div className="flex flex-col flex-1 z-20 justify-center items-center h-[400px] px-6">
+        <div className="flex flex-col flex-1 z-20 justify-center sm:items-center h-[400px] px-6">
           <h1 className="text-5xl">
             <span className="text-palRed font-extrabold">Donate</span> to
             Palestine
@@ -38,13 +38,13 @@ export default function Home() {
           </p>
           <div className="w-[70%] flex gap-x-6">
             <Link href={"/donate"}>
-              <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all ">
+              <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[150px] sm:w-[200px] hover:bg-green-700 transition-all ">
                 Donate Now
               </button>
             </Link>
 
             <Link href={"/about"}>
-              <button className="bg-transparent p-3 rounded text-black w-[200px] hover:bg-palRed hover:text-white transition-all">
+              <button className="bg-transparent p-3 rounded text-black w-[150px] sm:w-[200px] hover:bg-palRed hover:text-white transition-all">
                 Learn More
               </button>
             </Link>
@@ -152,9 +152,11 @@ export default function Home() {
             Thousands Need Your Help!
           </h2>
         </div>
-        <div className="flex justify-between items-center w-[90%] lg:w-[70%] mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-center w-[90%] lg:w-[70%] mx-auto">
           <div>
-            <h4 className="md:text-xl font-sans font-light">Email Us @</h4>
+            <h4 className="md:text-xl font-sans font-light text-center sm:text-left">
+              Email Us @
+            </h4>
             <div className="flex items-center gap-x-2">
               <p className="text-xl text-palRed">
                 <AiOutlineMail />

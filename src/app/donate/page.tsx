@@ -1,18 +1,36 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Jaga2Icon from "../components/icons/Jaga2Icon";
 import { BiMoney } from "react-icons/bi";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BiLogoBitcoin, BiCopy } from "react-icons/bi";
 
-const page = () => {
+const Page = () => {
   const handleSpread = () => {
     toast("Link Copied to clipboard");
     navigator.clipboard.writeText("https://donatePalestine.com");
   };
+  const handleCopyQr = () => {
+    toast("Copied to clipboard");
+    navigator.clipboard.writeText(
+      "bc1qw676vmuz342ud4elwz8epfk73l n4qfamikf2ht"
+    );
+  };
+  const [donatedValue, setDonatedValue] = useState<string>("");
+  const [donatePage, setDonatePage] = useState<number>(1);
+  const [anonymous, setAnonymous] = useState<boolean>();
+
+  // useEffect(() => {
+  //   var form: any = document.getElementById("donor-details");
+  //   var elements = form.elements;
+  //   for (var i = 0, len = elements.length; i < len; ++i) {
+  //     elements[i].readOnly = true;
+  //   }
+  // }, [anonymous]);
   return (
     <div className="py-[80px] px-5 sm:px-20 md:px-5 lg:px-[150px] overflow-x-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 pb-10">
@@ -44,22 +62,24 @@ const page = () => {
         </div>
       </div>
 
-      <section className="bg-[#f5f5f5ff] p-4 lg:p-10">
+      <section className=" p-4 w-full lg:p-10">
         <h2 className="text-center text-3xl font-bold capitalize">
           two ways to contribute
         </h2>
-        <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 p-4 lg:p-10 gap-x-5">
+        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 p-4 lg:p-10 gap-x-10">
           <div>
             <div className="flex gap-x-2 items-center text-2xl pb-4">
               <p className="text-palGreen md:text-xl lg:text-4xl">
-                <BiMoney />
+                <BiLogoBitcoin />
               </p>
-              <h3>Donate Cash</h3>
+              <h3>Donate Crypto</h3>
             </div>
             <p className="tracking-wide py-4 md:text-sm lg:text-base">
               The fastest way to support Soldiers and Army Families. Make a
               one-time or monthly recurring donation with a credit card, eCheck
-              or PayPal.
+              or PayPal.Your generous support provides humanitarian aid to
+              people in need around the world. This includes those struggling to
+              survive turmoil in Palestine
             </p>
             <Link href={"/give"}>
               <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all ">
@@ -67,19 +87,178 @@ const page = () => {
               </button>
             </Link>
           </div>
-          <div className="flex flex-col justify-end">
-            <div className="flex gap-x-2 items-center text-2xl pb-4 justify-end">
+
+          <div className="h-[450px] w-full md:w-[90%] md:mx-auto border rounded p-4 relative overflow-x-hidden">
+            <div className="w-full bg-palGreen rounded h-[20%] flex justify-center items-center">
+              <h1 className="text-white text-2xl">Crypto To Hope</h1>
+            </div>
+            {donatePage === 1 ? (
+              <div>
+                <form action="" className="py-10">
+                  <div className="bg-gray-100 border flex flex-col gap-x-2 items-center rounded p-2">
+                    <div className="w-full flex gap-x-2 items-center">
+                      <p className="text-palGreen md:text-xl lg:text-4xl">
+                        <BiLogoBitcoin />
+                      </p>
+                      <input
+                        onWheel={() => blur()}
+                        className="w-full"
+                        type="number"
+                        placeholder="0.000029btc = $1000 "
+                        onChange={(e) => setDonatedValue(e.target.value)}
+                        value={donatedValue}
+                        min={0}
+                      />
+                    </div>
+                    <div></div>
+                  </div>
+                </form>
+                <div className="w-full left-0 -translate-1/2 absolute bottom-5 flex justify-center">
+                  <button
+                    className="w-[90%] p-3 bg-palGreen text-white rounded"
+                    onClick={() => {
+                      if (parseInt(donatedValue) > 0 && donatedValue) {
+                        setDonatePage(donatePage + 1);
+                      }
+                    }}
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            ) : donatePage === 2 ? (
+              <div className="slide-in">
+                <form
+                  id="donor-details"
+                  action=""
+                  className="pt-4 grid grid-cols-1 gap-y-2"
+                  onSubmit={() => setDonatePage(donatePage + 1)}
+                >
+                  <div className="flex justify-between items-center pr-1">
+                    <p>Donate Anonymously</p>
+                    <input
+                      type="checkbox"
+                      className="w-4 h-4"
+                      onChange={(e) => {
+                        setAnonymous(e.target.checked);
+                      }}
+                    />
+                  </div>
+                  <fieldset
+                    disabled={anonymous}
+                    className="grid grid-cols-1 gap-y-2"
+                  >
+                    <input
+                      className="w-full"
+                      type="text"
+                      placeholder="Enter Your Full Name"
+                      required
+                    />
+                    <input
+                      className="w-full"
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                    <div className="flex justify-between gap-x-2">
+                      <input
+                        className="w-full"
+                        type="text"
+                        placeholder="Country"
+                        required
+                      />
+                      <input
+                        className="w-full"
+                        type="text"
+                        placeholder="City"
+                        required
+                      />
+                    </div>
+                    <input
+                      className="w-full"
+                      type="number"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </fieldset>
+                  <div className="flex gap-x-2">
+                    <button
+                      type="button"
+                      className="w-[90%] p-3 bg-palGreen text-white rounded-lg"
+                      onClick={() => {
+                        setDonatePage(donatePage - 1);
+                      }}
+                    >
+                      Previous
+                    </button>
+                    {anonymous ? (
+                      <button
+                        type="button"
+                        className="w-[90%] p-3 bg-palGreen text-white rounded-lg"
+                        onClick={() => {
+                          setDonatePage(donatePage + 1);
+                        }}
+                      >
+                        Next
+                      </button>
+                    ) : (
+                      <button
+                        type="submit"
+                        className="w-[90%] p-3 bg-palGreen text-white rounded-lg"
+                      >
+                        Next
+                      </button>
+                    )}
+                  </div>
+                </form>
+              </div>
+            ) : (
+              <div className="slide-in">
+                <div className="w-full h-full my-3 p-5 flex justify-center flex-col items-center">
+                  <p className="text-sm text-center pb-3">
+                    Use the address below to donate <b>{donatedValue} BTC</b>{" "}
+                    from your wallet.
+                  </p>
+                  <div className="relative w-[150px] h-[150px]">
+                    <Image alt="qr" src={"/images/qrCodeDonate.jpeg"} fill />
+                  </div>
+                  <div className="p-3 w-full border rounded my-2 flex items-center gap-x-3 ">
+                    <div
+                      className="cursor-pointer hover:bg-gray-100"
+                      onClick={handleCopyQr}
+                    >
+                      <BiCopy />
+                    </div>
+                    <div className="overflow-x-scroll donate-code">
+                      <p className="text-sm">
+                        bc1qw676vmuz342ud4elwz8epfk73ln4qfamikf2ht
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-[10px] text-palRed text-center">
+                    Send only BTC to this address. Sending other unsupported
+                    tokens or NFTs to this address may result in the loss of
+                    your donation. The address will expire after 180 days if
+                    unused.
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="flex flex-col justify-start">
+            <div className="flex gap-x-2 items-center text-2xl pb-4 justify-start">
               <p className="md:text-xl lg:text-4xl text-palGreen">
                 <AiOutlineShareAlt />
               </p>
               <h3>Spread the word</h3>
             </div>
-            <p className="tracking-wide py-4 text-right md:text-sm lg:text-base">
+            <p className="tracking-wide py-4 text-left md:text-sm lg:text-base">
               The fastest way to support Soldiers and Army Families. Make a
               one-time or monthly recurring donation with a credit card, eCheck
               or PayPal.
             </p>
-            <div className="flex justify-end">
+            <div className="flex justify-start">
               <button
                 className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all"
                 onClick={handleSpread}
@@ -95,4 +274,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

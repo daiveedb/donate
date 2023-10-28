@@ -1,10 +1,98 @@
 import React from "react";
 import JagaIcon from "../components/icons/JagaIcon";
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className="pt-[70px] px-3 sm:px-5 md:px-10 lg:px-16 xl:px-20">
+      <div className="px-2 pt-5 sm:px-4 md:px-8 lg:px-12 xl:px-20 pb-0 xl:pb-0 lg:pb-0 md:pb-0 sm:pb-0">
+        <h1 className="text-3xl py-3">How to help Palestine</h1>
+        <p>
+          Palestine has been embroiled in a long-standing conflict with Israel
+          for decades, resulting in a severe humanitarian crisis. The ongoing
+          conflict has led to the displacement of{" "}
+          <a
+            className="text-palRed underline"
+            href="https://reliefweb.int/report/occupied-palestinian-territory/enduring-palestine-refugee-crisis-nakba-sheikh-jarrah-gaza"
+          >
+            millions of Palestinians
+          </a>
+          , and the situation remains dire for those who are still living in the
+          Palestinian territories of the{" "}
+          <a
+            className="text-palRed underline"
+            href="https://www.pcrf.net/president-s-blog/what-are-the-gaza-strip-and-the-west-bank.html"
+          >
+            Gaza Strip and the West Bank.
+          </a>
+          If you&apos;re wondering how to help Palestine, there are several
+          impactful actions you can take:
+        </p>
+        <ul className="list-disc py-4 px-4">
+          <li className="py-2">
+            <p>
+              <b>Educate Yourself</b> - The first step toward taking meaningful
+              action to help Palestine is to educate yourself about{" "}
+              <a
+                className="text-palRed underline"
+                href="https://www.bbc.com/news/newsbeat-44124396"
+              >
+                the conflict and its root causes.
+              </a>{" "}
+              Research and read about the history of the conflict, the current
+              political situation, and the various cases of human rights abuse
+              that have taken place. This will give you a better understanding
+              of the issues at hand and help you identify the most effective
+              ways to help.
+            </p>
+          </li>
+          <li className="py-2">
+            <p>
+              <b>Advocate for change</b> - After you’ve educated yourself on the
+              issue, you can help Palestine by advocating for political change.
+              This can include writing to your elected representatives, signing
+              petitions, and supporting political campaigns that promote peace
+              and justice in the region. By using your voice to raise awareness
+              about the issues facing Palestinians, you can help to bring about
+              positive change.
+            </p>
+          </li>
+          <li className="py-2">
+            <p>
+              <b>Stay Informed and Engaged</b> - It&apos;s also essential to
+              stay informed and engaged regarding the situation in Palestine.
+              Follow reputable news outlets that cover the conflict, and stay up
+              to date on the latest developments. By staying informed, you can
+              continue to advocate for change and take meaningful action to help
+              those who are affected by the conflict.
+            </p>
+          </li>
+          <li className="py-2">
+            <p>
+              <b>Support Palestinian Businesses</b> - Another important way to
+              help Palestine is by supporting Palestinian businesses. By
+              purchasing goods and services from Palestinian-owned businesses,
+              you can help to support the local economy and promote economic
+              growth in the region. You can find Palestinian-owned businesses
+              online, or by visiting local markets and shops in your area that
+              specialize in Middle Eastern products.
+            </p>
+          </li>
+          <li className="py-2">
+            <p>
+              <b>Donate to Reputable Organizations</b> - One of the quickest and
+              most impactful ways to help Palestine is by donating to reputable
+              organizations that provide humanitarian aid to Palestinians.
+              Organizations like the Palestine Children’s Relief Fund (PCRF)
+              provide vital assistance to those affected by the conflict,
+              including food, shelter, and medical care. Your donation can go a
+              long way in making a difference in the lives of those who are
+              suffering.
+            </p>
+          </li>
+        </ul>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 p-2 sm:p-4 md:p-8 lg:p-12 xl:p-20 w-full">
         <div className="mb-5">
           <div className="relative">
@@ -16,15 +104,9 @@ const page = () => {
             </div>
           </div>
           <p className="py-4 text-center md:text-left">
-            Our main goal is to save and plant as many trees as we can and also
-            provide each customer with the opportunity to turn their unwanted
-            textbooks into profit. Donating books allows a chance for a second
-            life, giving someone else the opportunity to read and enjoy the
-            book. It’s also an environmentally-conscious decision since
-            recycling prevents them from ending up in a landfill. Our main goal
-            is to save and plant as many trees as we can and also provide each
-            customer with the opportunity to turn their unwanted textbooks into
-            profit.
+            Our Mission is to provide medical and humanitarian relief
+            collectively and individually to Arab children throughout the
+            Levant, regardless of their nationality, politics or religion.
           </p>
           <div className="flex justify-center w-full md:justify-start">
             <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
@@ -40,6 +122,40 @@ const page = () => {
               src={"/images/protest3.jpg"}
               fill
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 p-2 sm:p-4 md:p-8 lg:p-12 xl:p-20 pt-0 xl:pt-0 md:pt-0 lg:pt-0 sm:pt-0 w-full">
+        <div className="w-full sm:px-6">
+          <div className="w-full h-[300px] relative">
+            <Image
+              alt="protest"
+              className="rounded-lg"
+              src={"/images/protest2.jpg"}
+              fill
+            />
+          </div>
+        </div>
+        <div className="mb-5">
+          <div className="relative">
+            <h3 className="text-3xl text-center md:text-left">
+              Our Vision By 2024
+            </h3>
+            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 -z-10">
+              <JagaIcon height={20} />
+            </div>
+          </div>
+          <p className="py-4 text-center md:text-left">
+            We envision a world where all children in the Middle East have
+            access to quality medical care, regardless of nationality, religious
+            or political affiliation, and specialized health services for
+            children are independent and developed at the highest standards
+          </p>
+          <div className="flex justify-center w-full md:justify-start">
+            <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
+              Learn More
+            </button>
           </div>
         </div>
       </div>
@@ -61,21 +177,6 @@ const page = () => {
             <h3></h3>
             <h3>Raised</h3>
         </div> */}
-        </div>
-        <h2 className="text-xl md:text-4xl text-center">Our Partners</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 pt-2 md:pt-8 gap-8 justify-items-center pb-5">
-          <div className="relative w-[60%] h-[50px] mx-auto">
-            <Image alt="partner" src={"/images/partner1.png"} fill />
-          </div>
-          <div className="relative w-[60%] h-[50px] mx-auto">
-            <Image alt="partner" src={"/images/partner2.png"} fill />
-          </div>
-          <div className="relative w-[60%] h-[50px] mx-auto">
-            <Image alt="partner" src={"/images/partner3.png"} fill />
-          </div>
-          <div className="relative w-[60%] h-[50px] mx-auto">
-            <Image alt="partner" src={"/images/partner4.png"} fill />
-          </div>
         </div>
       </div>
     </div>

@@ -11,10 +11,11 @@ const page = () => {
               How to Contact us
             </h1>
             <p className="text-white py-4 sm:py-12 text-sm sm:text-base text-center">
-              Hi there, we would love to hear your thoughts, suggestions,
-              questions and opinions Reach out to us by filliong out the form
-              below and hitting &quot;send&quot;. Or Send us an email at
-              emailusathere@gmail.com
+              We are proud to announce Palestine Children&apos;s Relief Fund has
+              earned our sixth consecutive 4-star rating. This is our highest
+              possible rating and indicates that your organization adheres to
+              sector best practices and executes its mission in a financially
+              efficient way.
             </p>
             <div className="flex justify-center py-5">
               <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
