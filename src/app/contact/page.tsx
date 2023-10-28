@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const page = () => {
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    toast("Message sent successfully");
+  };
   return (
     <div className="py-[70px] px-5 sm:px-20 md:px-5 lg:px-[150px]">
       <div className="my-7">
@@ -17,11 +24,11 @@ const page = () => {
               sector best practices and executes its mission in a financially
               efficient way.
             </p>
-            <div className="flex justify-center py-5">
+            {/* <div className="flex justify-center py-5">
               <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
                 Get a Call
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -29,7 +36,11 @@ const page = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full">
         <div>
           <h2 className="text-2xl pb-5">Send us a Message</h2>
-          <form action="" className="flex flex-col gap-y-6">
+          <form
+            action=""
+            onSubmit={(e) => handleSubmit(e)}
+            className="flex flex-col gap-y-6"
+          >
             <input type="text" placeholder="Enter your name" required />
             <input type="email" placeholder="Enter your email" required />
             <textarea
@@ -50,6 +61,7 @@ const page = () => {
             <Image alt="Contact us" src={"/images/contactSVG.svg"} fill />
           </div>
         </div>
+        <ToastContainer hideProgressBar />
       </div>
     </div>
   );

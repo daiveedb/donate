@@ -107,11 +107,14 @@ const page = () => {
             Our Mission is to provide medical and humanitarian relief
             collectively and individually to Arab children throughout the
             Levant, regardless of their nationality, politics or religion.
+            Provides life-saving, life-sustaining and life-enriching
+            humanitarian aid to under-served populations around the world
+            regardless of faith or nationality.
           </p>
           <div className="flex justify-center w-full md:justify-start">
-            <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
+            {/* <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="w-full sm:px-6">
@@ -153,9 +156,9 @@ const page = () => {
             children are independent and developed at the highest standards
           </p>
           <div className="flex justify-center w-full md:justify-start">
-            <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
+            {/* <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

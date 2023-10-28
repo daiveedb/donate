@@ -29,7 +29,7 @@ const Navigation = () => {
         })}
       </div>
       <div className="hidden md:block">
-        <Link href={"/give"}>
+        <Link href={"/donate"}>
           <button className="bg-palGreen py-2 rounded cursor-pointer text-white w-[100px] sm:w-[150px] hover:bg-green-700 transition-all text-sm">
             Donate Now
           </button>

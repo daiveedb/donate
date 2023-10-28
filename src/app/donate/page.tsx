@@ -62,13 +62,13 @@ const Page = () => {
         </div>
       </div>
 
-      <section className=" p-4 w-full lg:p-10">
+      <section className=" p-4 w-full lg:p-10 bg-gray-100">
         <h2 className="text-center text-3xl font-bold capitalize">
           two ways to contribute
         </h2>
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 p-4 lg:p-10 gap-x-10">
           <div>
-            <div className="flex gap-x-2 items-center text-2xl pb-4">
+            <div className="flex gap-x-2 items-center text-2xl pb-2">
               <p className="text-palGreen md:text-xl lg:text-4xl">
                 <BiLogoBitcoin />
               </p>
@@ -81,14 +81,36 @@ const Page = () => {
               people in need around the world. This includes those struggling to
               survive turmoil in Palestine
             </p>
-            <Link href={"/give"}>
+            <div className="flex flex-col justify-start py-9">
+              <div className="flex gap-x-2 items-center text-2xl pb-2 justify-start">
+                <p className="md:text-xl lg:text-4xl text-palGreen">
+                  <AiOutlineShareAlt />
+                </p>
+                <h3>Spread the word</h3>
+              </div>
+              <p className="tracking-wide py-4 text-left md:text-sm lg:text-base">
+                The fastest way to support Soldiers and Army Families. Make a
+                one-time or monthly recurring donation with a credit card,
+                eCheck or PayPal.
+              </p>
+              <div className="flex justify-start">
+                <button
+                  className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all"
+                  onClick={handleSpread}
+                >
+                  Spread it
+                </button>
+                <ToastContainer hideProgressBar />
+              </div>
+            </div>
+            {/* <Link href={"/give"}>
               <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all ">
                 Donate Now
               </button>
-            </Link>
+            </Link> */}
           </div>
 
-          <div className="h-[450px] w-full md:w-[90%] md:mx-auto border rounded p-4 relative overflow-x-hidden">
+          <div className="h-[450px] w-full md:w-[90%] md:mx-auto border rounded p-4 relative overflow-x-hidden bg-white shadow-lg">
             <div className="w-full bg-palGreen rounded h-[20%] flex justify-center items-center">
               <h1 className="text-white text-2xl">Crypto To Hope</h1>
             </div>
@@ -246,7 +268,7 @@ const Page = () => {
             )}
           </div>
 
-          <div className="flex flex-col justify-start">
+          {/* <div className="flex flex-col justify-start">
             <div className="flex gap-x-2 items-center text-2xl pb-4 justify-start">
               <p className="md:text-xl lg:text-4xl text-palGreen">
                 <AiOutlineShareAlt />
@@ -267,7 +289,7 @@ const Page = () => {
               </button>
               <ToastContainer hideProgressBar />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
