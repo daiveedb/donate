@@ -7,9 +7,12 @@ import { usePathname } from "next/navigation";
 const Navigation = () => {
   const pathname = usePathname();
   return (
-    <div className="flex w-full h-[70px] bg-[#ffffffe0] justify-between items-center px-2 sm:px-5 md:px-10 lg:px-20 fixed z-30">
-      <div className="w-24 h-16 relative">
-        <Image alt="" src={"/images/logodonate.png"} fill />
+    <div className="flex w-full h-[90px] bg-[#ffffffe0] justify-between items-center px-2 sm:px-5 md:px-10 lg:px-20 fixed z-30">
+      <div className="flex flex-col items-center gap-y-2">
+        <div className="w-16 h-12 relative">
+          <Image alt="" src={"/images/logodonate.png"} fill />
+        </div>
+        <h1 className="text-sm">Support Palestinian Hope</h1>
       </div>
       <div className="flex gap-x-3 sm:gap-x-6">
         {navLinks.map((link: any) => {

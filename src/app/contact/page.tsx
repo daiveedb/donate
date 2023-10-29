@@ -10,7 +10,7 @@ const page = () => {
     toast("Message sent successfully");
   };
   return (
-    <div className="py-[70px] px-5 sm:px-20 md:px-5 lg:px-[150px]">
+    <div className="py-[90px] px-5 sm:px-20 md:px-5 lg:px-[150px]">
       <div className="my-7">
         <div className="bg-[url('/images/protest.jpeg')] bg-cover bg-center bg-no-repeat w-full p-10 h-[400px] relative rounded-lg">
           <div className="absolute inset-0 bg-[#000000aa] p-10 px-8 md:px-20 rounded-lg">

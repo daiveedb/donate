@@ -32,7 +32,7 @@ const Page = () => {
   //   }
   // }, [anonymous]);
   return (
-    <div className="py-[80px] px-5 sm:px-20 md:px-5 lg:px-[150px] overflow-x-hidden">
+    <div className="py-[100px] px-5 sm:px-20 md:px-5 lg:px-[150px] overflow-x-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 pb-10">
         <div className="flex justify-center flex-col">
           <h1 className=" text-4xl sm:text-5xl md:text-6xl font-black uppercase ">

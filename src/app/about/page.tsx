@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="pt-[70px] px-3 sm:px-5 md:px-10 lg:px-16 xl:px-20">
+    <div className="pt-[90px] px-3 sm:px-5 md:px-10 lg:px-16 xl:px-20">
       <div className="px-2 pt-5 sm:px-4 md:px-8 lg:px-12 xl:px-20 pb-0 xl:pb-0 lg:pb-0 md:pb-0 sm:pb-0">
         <h1 className="text-3xl py-3">How to help Palestine</h1>
         <p>
@@ -78,11 +78,10 @@ const page = () => {
               <b>Donate to Reputable Organizations</b> - One of the quickest and
               most impactful ways to help Palestine is by donating to reputable
               organizations that provide humanitarian aid to Palestinians.
-              Organizations like the Palestine Children’s Relief Fund (PCRF)
-              provide vital assistance to those affected by the conflict,
-              including food, shelter, and medical care. Your donation can go a
-              long way in making a difference in the lives of those who are
-              suffering.
+              Organizations like the Support Palestinian Hope (SPH) provide
+              vital assistance to those affected by the conflict, including
+              food, shelter, and medical care. Your donation can go a long way
+              in making a difference in the lives of those who are suffering.
             </p>
           </li>
         </ul>

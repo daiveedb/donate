@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-screen overflow-x-hidden pt-[70px]">
+    <main className="w-screen overflow-x-hidden pt-[90px]">
       <section className="flex flex-col lg:flex-row-reverse justify-between">
         <div className="relative flex-1">
           <div className="absolute top-0 -right-[200px] z-20">
@@ -32,9 +32,11 @@ export default function Home() {
             <span className="text-palGreen font-extrabold">Peace.</span>
           </h2>
           <p className="w-[70%] py-8">
-            Wondering where to donate old books or textbooks? You may donate the
-            books and drop them off at our warehouse in Toronto or to your local
-            charity.
+            Wondering where to donate for Charity? Support Palestinian Hope
+            provides life-saving, life-sustaining, and life-enriching
+            humanitarian aid to underserved Palestinians around the world and
+            Palestinians gruesomely affected by the war. TURN YOUR COMPASSION
+            INTO HOPE !!
           </p>
           <div className="w-[70%] flex gap-x-6">
             <Link href={"/donate"}>
@@ -61,12 +63,12 @@ export default function Home() {
               <div className="flex justify-center">
                 <PlantIcon height={60} />
               </div>
-              <h3 className="font-bold text-2xl pt-2">Save Lives</h3>
+              <h3 className="font-bold text-2xl pt-2">SAVE LIVES</h3>
             </div>
-            <p className="text-center vision-text py-4">
-              End deforestation and planted with www.trees.org. Trees for the
-              Future fights problem with the Forest Garden Program, a process of
-              planting specific types of fast-growing trees.
+            <p className="text-center vision-text py-4 lowercase">
+              THE VALUE OF LIFE IS NOT IN IT’S DURATION BUT IN IT’S DONATION.
+              YOU ARE NOT IMPORTANT BECAUSE OF HOW LONG YOU HAVE LIVED, YOU ARE
+              IMPORTANT BECAUSE OF HOW EFFECTIVE YOU LIVE
             </p>
           </div>
 
@@ -75,12 +77,14 @@ export default function Home() {
               <div className="flex justify-center">
                 <BookIcon height={60} />
               </div>
-              <h3 className="font-bold text-2xl pt-2">Spread Awareness</h3>
+              <h3 className="font-bold text-2xl pt-2 uppercase">
+                Spread Awareness
+              </h3>
             </div>
-            <p className="text-center py-4">
-              End deforestation and planted with www.trees.org. Trees for the
-              Future fights problem with the Forest Garden Program, a process of
-              planting specific types of fast-growing trees.
+            <p className="text-center py-4 lowercase">
+              EVERY GOOD ACT IS CHARITY. A MANS TRUE WEALTH HEREAFTER IS THE
+              GOOD THAT HE DOES IN THIS WORLD TO HIS FELLOWS. BE THE REASON
+              SOMEONE DOES A GOOD DID TODAY, TOGETHER EVERYONE ACHIEVES MORE
             </p>
           </div>
 
@@ -89,12 +93,13 @@ export default function Home() {
               <div className="flex justify-center">
                 <PlantIcon height={60} />
               </div>
-              <h3 className="font-bold text-2xl pt-2">Save Lives</h3>
+              <h3 className="font-bold text-2xl pt-2">SAY A PRAYER</h3>
             </div>
-            <p className="text-center py-4">
-              End deforestation and planted with www.trees.org. Trees for the
-              Future fights problem with the Forest Garden Program, a process of
-              planting specific types of fast-growing trees.
+            <p className="text-center py-4 lowercase">
+              OF THEIR GOODS, TAKE ALMS, THAT SO THOU MIGHTEST PURIFY AND
+              SANCTIFY THEM; AND PRAY ON THEIR BEHALF. VERILY THY PRAYERS ARE A
+              SOURCE OF SECURITY FOR THEM AND ALLAH IS ONE WHO HEARETH AND
+              KNOWETH.
             </p>
           </div>
         </div>
