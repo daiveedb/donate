@@ -24,11 +24,11 @@ const page = () => {
               sector best practices and executes its mission in a financially
               efficient way.
             </p>
-            {/* <div className="flex justify-center py-5">
-              <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
-                Get a Call
-              </button>
-            </div> */}
+            <div className="flex justify-center py-5">
+              <p className="text-white text-xl ">
+                Email us at info@supportpalestinianhope.com
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -168,7 +168,9 @@ export default function Home() {
               <p className="text-xl text-palRed">
                 <AiOutlineMail />
               </p>
-              <p className="text-lg font-semibold">1-855-552-2605 </p>
+              <p className="text-lg font-semibold">
+                info@supportpalestinianhope.com
+              </p>
             </div>
           </div>
 
