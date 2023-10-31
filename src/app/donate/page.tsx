@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BiLogoBitcoin, BiCopy } from "react-icons/bi";
+import { log } from "console";
 
 const Page = () => {
   const handleSpread = () => {
@@ -139,7 +140,7 @@ const Page = () => {
                   <button
                     className="w-[90%] p-3 bg-palGreen text-white rounded"
                     onClick={() => {
-                      if (parseInt(donatedValue) > 0 && donatedValue) {
+                      if (Math.ceil(donatedValue as any) > 0 && donatedValue) {
                         setDonatePage(donatePage + 1);
                       }
                     }}

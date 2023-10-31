@@ -17,6 +17,6 @@ export const navLinks: { title: string; link: string; id: number }[] = [
   {
     title: "Donate",
     link: "/donate",
-    id: 2,
+    id: 4,
   },
 ];
