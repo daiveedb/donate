@@ -109,7 +109,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 md:h-[400px]">
           <div className="h-full">
             <div className="relative h-[400px] md:h-full">
-              <Image alt="gallery" src={"/images/gallery.png"} fill />
+              <Image alt="gallery" src={"/images/disaster.webp"} fill />
             </div>
           </div>
           <div className="p-5">
