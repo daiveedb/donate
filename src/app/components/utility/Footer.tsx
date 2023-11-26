@@ -5,7 +5,7 @@ import { BiLogoBitcoin, BiCopy } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#4a4f53ff] text-[#c9cbccff] w-full py-14 p-28 ">
+    <div className="bg-[#4a4f53ff] text-[#c9cbccff] w-full p-5 py-4 md:py-14 md:px-28 ">
       <div className="flex flex-col md:flex-row justify-between items-start gap-x-8">
         <div className="flex-1">
           <p className="text-2xl font-semibold py-2">
@@ -55,11 +55,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="py-2 flex justify-center items-center">
-        Privacy Policy | Terms of Use | Legal Disclosure | Donate | Contact Us |
-        About
+        <p className="text-center">
+          Privacy Policy | Terms of Use | Legal Disclosure | Donate | Contact Us
+          | About
+        </p>
       </div>
       <div className="flex justify-center items-center">
-        <p className="text-[#818487ff] text-sm">
+        <p className="text-[#818487ff] text-sm text-center">
           &copy; 2023 Save the Children Save the Children Federation, Inc. is a
           501(c)(3) organization. Gifts are deductible to the full extent
           allowable under IRS regulations.
