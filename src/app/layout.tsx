@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/utility/Navigation";
 import Footer from "./components/utility/Footer";
-import Script from "next/script";
-// import { usePathname } from 'next/navigation';
+import GoogleTranslate from "../GoogleTranslate";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,28 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div id="google_translate_element"></div>
         <Navigation />
-        <div>{children}</div>
+        <div className="pt-[90px]">{children}</div>
         <Footer />
         <script
           src="//code.tidio.co/hhqgzbeuldkevhznpknxpgf5bs8y3mfy.js"
           async
         ></script>
-        {/* <script id="" type="text/javascript">
-         
-           function googleTranslateElementInit(){
-            new google.translate.TranslateElement(
-               { pageLanguage: "en" },
-               "google_translate_element"
-               )
-           }
-         
-        </script>
-        <Script
-          type="text/javascript"
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        ></Script> */}
       </body>
     </html>
   );

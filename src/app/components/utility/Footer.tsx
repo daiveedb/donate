@@ -62,9 +62,9 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center">
         <p className="text-[#818487ff] text-sm text-center">
-          &copy; 2023 Save the Children Save the Children Federation, Inc. is a
-          501(c)(3) organization. Gifts are deductible to the full extent
-          allowable under IRS regulations.
+          &copy; 2023 Support Palestinian Hope. is a 501(c)(3) organization.
+          Gifts are deductible to the full extent allowable under IRS
+          regulations.
         </p>
       </div>
     </div>

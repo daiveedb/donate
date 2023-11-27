@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-screen overflow-x-hidden pt-[90px]">
+    <main className="w-screen overflow-x-hidden">
       <section className="flex flex-col lg:flex-row-reverse justify-between">
         <div className="relative flex-1">
           <div className="absolute top-0 -right-[200px] z-20">

@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { Menu } from "@headlessui/react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import GoogleTranslate from "@/GoogleTranslate";
 const Navigation = () => {
   const pathname = usePathname();
   return (
@@ -17,6 +18,7 @@ const Navigation = () => {
         </div>
         <h1 className="text-sm">Support Palestinian Hope</h1>
       </div>
+      <GoogleTranslate />
       <div className="sm:flex gap-x-3 sm:gap-x-6 hidden">
         {navLinks.map((link: any) => {
           return (
