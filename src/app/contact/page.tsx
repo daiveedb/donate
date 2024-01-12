@@ -1,14 +1,41 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useForm, ValidationError } from "@formspree/react";
 
-const page = () => {
+const Page = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    var url =
+      "https://wa.me/7086082215?text=" +
+      "Name: " +
+      name +
+      "%0a" +
+      "Email: " +
+      email +
+      "%0a" +
+      "Message: " +
+      message;
+
+    window.open(url, "_blank")?.focus();
     toast("Message sent successfully");
   };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [state, handleSubmitt] = useForm("xayrneyw");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("submitted successfully");
+      setEmail("");
+      setMessage("");
+      setName("");
+    }
+  }, [state]);
   return (
     <div className="py-[90px] pt-0 px-5 sm:px-20 md:px-5 lg:px-[150px]">
       <div className="my-7">
@@ -37,21 +64,57 @@ const page = () => {
         <div>
           <h2 className="text-2xl pb-5">Send us a Message</h2>
           <form
-            action=""
-            onSubmit={(e) => handleSubmit(e)}
+            // action="mailto:bajomodavid18@gmail.com"
+            // method="post"
+            // onSubmit={(e) => handleSubmit(e)}
             className="flex flex-col gap-y-6"
+            // encType="text/plain"
+            onSubmit={handleSubmitt}
           >
-            <input type="text" placeholder="Enter your name" required />
-            <input type="email" placeholder="Enter your email" required />
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              placeholder="Enter your name"
+              required
+              name="name"
+              id="name"
+            />
+            <ValidationError prefix="name" field="name" errors={state.errors} />
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              placeholder="Enter your email"
+              required
+              name="email"
+              id="email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="message"
               cols={20}
               rows={5}
               placeholder="Tell us something"
               required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all ">
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <button
+              type="submit"
+              className="bg-palGreen p-3 rounded cursor-pointer text-white w-[200px] hover:bg-green-700 transition-all "
+              disabled={state.submitting}
+            >
               Send
             </button>
           </form>
@@ -67,4 +130,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

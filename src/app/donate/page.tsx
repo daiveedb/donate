@@ -76,11 +76,12 @@ const Page = () => {
               <h3>Donate Crypto</h3>
             </div>
             <p className="tracking-wide py-4 md:text-sm lg:text-base">
-              The fastest way to support Soldiers and Army Families. Make a
-              one-time or monthly recurring donation with a credit card, eCheck
-              or PayPal.Your generous support provides humanitarian aid to
-              people in need around the world. This includes those struggling to
-              survive turmoil in Palestine
+              The fastest way to support The Palestinian Children. Make a
+              one-time or monthly recurring donation through the Support
+              Palestinian Hope Secure Bitcoin cryptocurrency Wallet address.
+              Your generous support provides humanitarian aid to the displaced
+              children of Palestine. This includes those struggling to survive
+              turmoil in Palestine
             </p>
             <div className="flex flex-col justify-start py-9">
               <div className="flex gap-x-2 items-center text-2xl pb-2 justify-start">
@@ -90,9 +91,8 @@ const Page = () => {
                 <h3>Spread the word</h3>
               </div>
               <p className="tracking-wide py-4 text-left md:text-sm lg:text-base">
-                The fastest way to support Soldiers and Army Families. Make a
-                one-time or monthly recurring donation with a credit card,
-                eCheck or PayPal.
+                The fastest way to support The children of Palestine is to share
+                all amongst us as your good faith brings us blessings
               </p>
               <div className="flex justify-start">
                 <button
