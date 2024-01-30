@@ -81,7 +81,7 @@ export default function Home() {
                 Spread Awareness
               </h3>
             </div>
-            <p className="text-center py-4 lowercase">
+            <p className="text-center py-4 ">
               Every good act is charity. a mans true wealth hereafter is the
               good that he does in this world to his fellows. be the reason
               someone does a good did today, together everyone achieves more
@@ -95,7 +95,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-2xl pt-2">SAY A PRAYER</h3>
             </div>
-            <p className="text-center py-4 lowercase">
+            <p className="text-center py-4 ">
               Of their goods, take alms, that so thou mightest purify and
               sanctify them; and pray on their behalf. verily thy prayers are a
               source of security for them and allah is one who heareth and
