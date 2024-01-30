@@ -2,7 +2,6 @@
 // const nextConfig = {}
 
 const nextConfig = {
-    distDir: "out",
     reactStrictMode:true,
     swcMinify:true,
   };
