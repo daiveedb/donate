@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-2xl pt-2">SAVE LIVES</h3>
             </div>
-            <p className="text-center vision-text py-4 first-letter:capitalize">
+            <p className="text-center vision-text py-4 capitalize  first-letter:capitalize">
               The value of life is not in it’s duration but in it’s donation.
               you are not important because of how long you have lived, you are
               important because of how effective you live
@@ -81,7 +81,7 @@ export default function Home() {
                 Spread Awareness
               </h3>
             </div>
-            <p className="text-center py-4 ">
+            <p className="text-center py-4  capitalize ">
               Every good act is charity. a mans true wealth hereafter is the
               good that he does in this world to his fellows. be the reason
               someone does a good did today, together everyone achieves more
@@ -95,7 +95,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-2xl pt-2">SAY A PRAYER</h3>
             </div>
-            <p className="text-center py-4 ">
+            <p className="text-center py-4  capitalize ">
               Of their goods, take alms, that so thou mightest purify and
               sanctify them; and pray on their behalf. verily thy prayers are a
               source of security for them and allah is one who heareth and
