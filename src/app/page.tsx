@@ -65,10 +65,10 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-2xl pt-2">SAVE LIVES</h3>
             </div>
-            <p className="text-center vision-text py-4 lowercase first-letter:capitalize">
-              THE VALUE OF LIFE IS NOT IN IT’S DURATION BUT IN IT’S DONATION.
-              YOU ARE NOT IMPORTANT BECAUSE OF HOW LONG YOU HAVE LIVED, YOU ARE
-              IMPORTANT BECAUSE OF HOW EFFECTIVE YOU LIVE
+            <p className="text-center vision-text py-4 first-letter:capitalize">
+              The value of life is not in it’s duration but in it’s donation.
+              you are not important because of how long you have lived, you are
+              important because of how effective you live
             </p>
           </div>
 
@@ -82,9 +82,9 @@ export default function Home() {
               </h3>
             </div>
             <p className="text-center py-4 lowercase">
-              EVERY GOOD ACT IS CHARITY. A MANS TRUE WEALTH HEREAFTER IS THE
-              GOOD THAT HE DOES IN THIS WORLD TO HIS FELLOWS. BE THE REASON
-              SOMEONE DOES A GOOD DID TODAY, TOGETHER EVERYONE ACHIEVES MORE
+              Every good act is charity. a mans true wealth hereafter is the
+              good that he does in this world to his fellows. be the reason
+              someone does a good did today, together everyone achieves more
             </p>
           </div>
 
@@ -96,10 +96,10 @@ export default function Home() {
               <h3 className="font-bold text-2xl pt-2">SAY A PRAYER</h3>
             </div>
             <p className="text-center py-4 lowercase">
-              OF THEIR GOODS, TAKE ALMS, THAT SO THOU MIGHTEST PURIFY AND
-              SANCTIFY THEM; AND PRAY ON THEIR BEHALF. VERILY THY PRAYERS ARE A
-              SOURCE OF SECURITY FOR THEM AND ALLAH IS ONE WHO HEARETH AND
-              KNOWETH.
+              Of their goods, take alms, that so thou mightest purify and
+              sanctify them; and pray on their behalf. verily thy prayers are a
+              source of security for them and allah is one who heareth and
+              knoweth.
             </p>
           </div>
         </div>
