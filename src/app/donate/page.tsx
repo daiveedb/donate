@@ -13,7 +13,7 @@ import { log } from "console";
 const Page = () => {
   const handleSpread = () => {
     toast("Link Copied to clipboard");
-    navigator.clipboard.writeText("https://donatePalestine.com");
+    navigator.clipboard.writeText("supportpalestinianhope.com");
   };
   const handleCopyQr = () => {
     toast("Copied to clipboard");
