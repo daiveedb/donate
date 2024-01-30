@@ -254,7 +254,7 @@ const Page = () => {
                     </div>
                     <div className="overflow-x-scroll donate-code">
                       <p className="text-sm">
-                        bc1qw676vmuz342ud4elwz8epfk73ln4qfamikf2ht
+                        bc1qw676vmuz342ud4elwz8epfk73ln4qfamjkf2ht
                       </p>
                     </div>
                   </div>

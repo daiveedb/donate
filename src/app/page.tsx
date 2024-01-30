@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-2xl pt-2">SAVE LIVES</h3>
             </div>
-            <p className="text-center vision-text py-4 lowercase">
+            <p className="text-center vision-text py-4 lowercase first-letter:capitalize">
               THE VALUE OF LIFE IS NOT IN IT’S DURATION BUT IN IT’S DONATION.
               YOU ARE NOT IMPORTANT BECAUSE OF HOW LONG YOU HAVE LIVED, YOU ARE
               IMPORTANT BECAUSE OF HOW EFFECTIVE YOU LIVE
