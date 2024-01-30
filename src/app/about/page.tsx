@@ -97,12 +97,11 @@ const page = () => {
             </div>
           </div>
           <p className="py-4 text-center md:text-left">
-            Our Mission is to provide medical and humanitarian relief
-            collectively and individually to Arab children throughout the
-            Levant, regardless of their nationality, politics or religion.
-            Provides life-saving, life-sustaining and life-enriching
-            humanitarian aid to under-served populations around the world
-            regardless of faith or nationality.
+            At Support Palestinian Hope, Our mission is driven by an unwavering
+            commitment to providing compassionate care for children caught in
+            the tumultuous throes of war. Our focus is on creating a sanctuary
+            of support, healing, and hope that transcends the immediate
+            challenges these children face.
           </p>
           <div className="flex justify-center w-full md:justify-start">
             {/* <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">
@@ -143,10 +142,13 @@ const page = () => {
             </div>
           </div>
           <p className="py-4 text-center md:text-left">
-            We envision a world where all children in the Middle East have
-            access to quality medical care, regardless of nationality, religious
-            or political affiliation, and specialized health services for
-            children are independent and developed at the highest standards
+            In a world marred by the scars of conflict, our vision at Support
+            Palestinian Hope is a beacon of hope and compassion, focused on the
+            unwavering commitment to provide exceptional medical care for the
+            most vulnerable among us – children affected by war. We envision a
+            future where the innocent victims of conflict, facing the direst
+            circumstances, are embraced by a global community that recognizes
+            their right to a healthy and dignified life.
           </p>
           <div className="flex justify-center w-full md:justify-start">
             {/* <button className="bg-palRed p-3 rounded text-white w-[200px] hover:bg-palRed hover:text-white transition-all">

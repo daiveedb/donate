@@ -45,7 +45,7 @@ const Page = () => {
               How to Contact us
             </h1>
             <p className="text-white py-4 sm:py-12 text-sm sm:text-base text-center">
-              We are proud to announce Palestine Children&apos;s Relief Fund has
+              We are proud to announce Support Palestine Hope Relief Fund has
               earned our sixth consecutive 4-star rating. This is our highest
               possible rating and indicates that your organization adheres to
               sector best practices and executes its mission in a financially

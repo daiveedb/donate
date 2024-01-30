@@ -161,7 +161,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center w-[90%] lg:w-[70%] mx-auto">
           <div>
-            <h4 className="md:text-xl font-sans font-light text-center sm:text-left">
+            <h4 className="md:text-xl text-center font-sans font-light">
               Email Us @
             </h4>
             <div className="flex items-center gap-x-2">
